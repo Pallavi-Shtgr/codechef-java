@@ -9,3 +9,6 @@
 // The first line of input will contain a single integer T, denoting the number of test cases.
 // Each test case consists of two space-separated integers X and Y — the percentage of attendance and percentage of marks obtained by Alice.
 
+// Output Format
+// For each test case, output on a new line, the grade awarded to Alice.
+// Note that you may print the grade in lowercase or uppercase.
