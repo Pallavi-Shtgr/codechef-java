@@ -12,3 +12,30 @@
 // Output Format
 // For each test case, output on a new line, the grade awarded to Alice.
 // Note that you may print the grade in lowercase or uppercase.
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner s=new Scanner(System.in);
+	    int a=s.nextInt();
+	    while(a-->0){
+	        int x=s.nextInt();
+	        int y=s.nextInt();
+	        if(x<50){
+	            System.out.println("Z");
+	        }
+	        else if(y<50&&x>=50){
+	            System.out.println("F");
+	        }
+	        else{
+	            System.out.println("A");
+	        }
+	    }
+	
+	}
+}
