@@ -14,7 +14,7 @@
 
 import java.util.*;
 import java.lang.*;
-import java.io.*;
+
 
 class Codechef
 {
@@ -25,10 +25,11 @@ class Codechef
 	    while(a-->0){
 	        int x=s.nextInt();
 	        int y=s.nextInt();
-	        if(x<50){
+	        if(x<50)
+			{
 	            System.out.println("Z");
 	        }
-	        else if(y<50&&x>=50){
+	        else if(y<50 && x>=50){
 	            System.out.println("F");
 	        }
 	        else{
