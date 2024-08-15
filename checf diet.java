@@ -4,3 +4,50 @@
 
 // Determine whether Chef will have enough protein all the time during his diet. In case he will not have enough, find the first day on which Chef will be unable to eat 
 // K grams of protein.
+
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner read = new Scanner(System.in);
+	    int t = read.nextInt();
+	    for(int i=0; i<t; i++){
+	        int n = read.nextInt();
+	        int k = read.nextInt();
+	        int[] a = new int[n];
+	        for(int j=0; j<n; j++){
+	            int ele = read.nextInt();
+	            a[j] = ele;
+	        }
+	        int x = 0;
+	        int count = 0;
+	        for(int j=0; j<n; j++){
+	            if(a[j] >= k){
+	                x = x + (a[j] - k);
+	                count = count + 0;
+	            }
+	            else{
+	                if((a[j] + x) >= k){
+	                    x = x - (k - a[j]);
+	                    count = count + 0;
+	                }
+	                else{
+	                    System.out.println("NO " + (j+1));
+	                    count = count + 1;
+	                    break;
+	                }
+	            }
+	        }
+	        if(count == 0){
+	            System.out.println("YES");
+	        }
+	    }
+	}
+}
